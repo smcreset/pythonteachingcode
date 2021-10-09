@@ -1,8 +1,9 @@
-from flask import Flask
+# [ ] Print each word in the quote on a new line
+quote = "they stumble who run fast"
+start = 0
+space_index = quote.find(" ")
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def hello():
-    return 'Hello, World!'d
+while space_index != -1:
+    print(quote[start:space_index])
+    start = space_index + 1
+    space_index = quote.find(" ", space_index + 1)
