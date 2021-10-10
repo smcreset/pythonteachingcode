@@ -1,9 +1,9 @@
-# [ ] Print each word in the quote on a new line
-quote = "they stumble who run fast"
-start = 0
-space_index = quote.find(" ")
+code_tip = "code a conditional decision like you would say it"
+print ("code_tip:" , code_tip)
+i_index = code_tip.find("i")
 
-while space_index != -1:
-    print(quote[start:space_index])
-    start = space_index + 1
-    space_index = quote.find(" ", space_index + 1)
+while i_index != -1:
+    print(code_tip.find("i", i_index))
+    i_index = code_tip.find("i", i_index + 1)
+
+
