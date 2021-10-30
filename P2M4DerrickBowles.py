@@ -10,9 +10,10 @@ theadings = headings.split(',')
 city_temp = temps.readline().split(',')
 
 while city_temp:
-	print(headings[2], 'for', city_temp[0], 'is', city_temp[2])
-	if city_temp[0] == 'Tokyo':
-		break
-	else:
-		city_temp = temps.readline().split(',')
-	
+        print(headings[2], 'for', city_temp[0], 'is', city_temp[2])
+        if city_temp[0] == 'Rio de Janeiro':
+                break
+        else:
+                city_temp = temps.readline().split(',')	
+
+
